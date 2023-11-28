@@ -1,7 +1,7 @@
 #!/usr/bin/Rscript
 ###---
 # all chr genes cpg site within 50kb (nearest gene)
-# get empirical permuted proportions for each gene
+# get empirical proportions for each gene
 # loaded from chr minimum distance table
 library(dplyr)
 library(data.table)
