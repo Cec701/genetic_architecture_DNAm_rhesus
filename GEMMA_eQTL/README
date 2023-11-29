@@ -1,0 +1,13 @@
+## scripts for GEMMA eQTL analysis with WGS and RNAseq data 
+
+# Get all SNPs within 200kb of gene (example chr10 script)
+#1. snps_200kb_chr10_gene_makebed.sh 
+#Add expression phenotypes to input files (5 SVs regressed out)
+#2. add_SVA_res_phenotype_fam.R
+#3. add_SVA_res_phenotype_fam.sh
+# Run GEMMA
+#4. gemma_lmm_eqtl_chr1_SVA5.sh
+
+# check permuted distribution chromosome 1 
+#5. chr1_perm_makefiles.sh
+#6. gemma_lmm_eqtl_chr1_perm.sh
