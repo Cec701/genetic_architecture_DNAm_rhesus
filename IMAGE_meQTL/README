@@ -1,0 +1,16 @@
+## IMAGE meQTL calling scripts
+## Run IMAGE
+#1. chrn_573_merge_filter.R
+#2. chrn_573_image_cov_w_int.R 
+## Permutation based FDR correction
+#3. IMAGE_permutation_FDR_correction.R
+## Get MAF, methylation level, read counts, and variance levels
+#4. MAF_merge_res_all_chr_image.R
+#5. mean_read_meth_count_res_all.R
+#6. variance_image_sites_final.R
+## Genotype PVE calculation
+#7. pve_calculation_image_all_chr_final.R
+## Annotations
+#8. res_all_GTF_ann_gene_body_final.R
+#9. res_all_GTF_annotations_macaque.R
+#10. enhancer_state_annotations_all_res_final.R
