@@ -1,0 +1,5 @@
+## meQTL analysis with PQLseq scripts
+## prepare SNP-CpGs for input
+#1. genometh_from_image_forpql_final.R 
+## run PQLseq and calculate PVE for all covariates 
+#2. pqlseq_chrn_forloop_next_scale_final.R
