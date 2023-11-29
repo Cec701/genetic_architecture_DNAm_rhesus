@@ -1,0 +1,6 @@
+## Scripts for genotyping from RRBS bams, filtering, and ASM calling
+
+# 1. SNP_calling_start.sh
+# 2. Rehead_vcf.sh
+# 3. ASM_RRBS.sh 
+# 4. merge_vcf_RRBS.sh
