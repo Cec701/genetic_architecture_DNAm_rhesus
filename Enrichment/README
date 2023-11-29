@@ -1,3 +1,10 @@
-## scripts for GSEA meQTL gene enrichment and running HOMER
-#1. gsea_meqtlgene_analysis_5_22_23_final.R
-#2. HOMER_meQTL_TF_enrichment.sh
+## scripts for meQTL enrichment
+# Genes with more significant meQTL within 50kb of TSS than expected by chance 
+#1. cpgsites_50kb_macaquegene_mindist_array_final.R # get cpg-nearest gene pairs
+#2. cpgsites_mindist_macaquegene_perm_array_allchr_final.R # permutations
+#3. allchr_50kb_cpg_nearestgene_empirical_proportions.R # empirical 
+#4. higherthanchance_sig_meqtl_50kb_proteincoding_genes_final.R
+# GSEA meQTL gene analysis
+#5. gsea_meqtlgene_analysis_5_22_23_final.R
+# running TF enrichment program 
+#6. HOMER_meQTL_TF_enrichment.sh
