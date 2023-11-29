@@ -1,0 +1,3 @@
+## scripts for GSEA meQTL gene enrichment and running HOMER
+#1. gsea_meqtlgene_analysis_5_22_23_final.R
+#2. HOMER_meQTL_TF_enrichment.sh
