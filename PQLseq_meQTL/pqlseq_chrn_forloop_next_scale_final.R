@@ -116,9 +116,18 @@ for (i in 1:length(split_ym_meth_counts_withgeno)){
     	  model_DNA_meth_list[[i]] <- model_DNA_meth_allres
 	  
   	}
-}                
+}  
 
 
 final_model_DNA_meth = do.call(rbind, model_DNA_meth_list)      
+
+final_model_DNA_meth$total_variance <- ((final_model_DNA_meth$A_age + final_model_DNA_meth$A_batch + 
+                                                  final_model_DNA_meth$A_sex_binary + final_model_DNA_meth$A_genotype) + final_model_DNA_meth$sigma2)
+
+final_model_DNA_meth$pve_age <- final_model_DNA_meth$A_age/final_model_DNA_meth$total_variance
+final_model_DNA_meth$pve_batch <- final_model_DNA_meth$A_batch/final_model_DNA_meth$total_variance
+final_model_DNA_meth$pve_sex <- final_model_DNA_meth$A_sex_binary/final_model_DNA_meth$total_variance
+final_model_DNA_meth$pve_genotype <- final_model_DNA_meth$A_genotype/final_model_DNA_meth$total_variance
+
 
 write.table(final_model_DNA_meth, file=paste("chr", CHR, "_snps_pqlseqout_scaled_final.txt", sep=""))      
