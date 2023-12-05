@@ -5,3 +5,4 @@
  ### PQLseq_meQTL: Scripts for meQTL analysis in PQLseq
  ### GEMMA_eQTL: Scripts for eQTL analysis in GEMMA
  ### Enrichment: Scripts for finding genes with more meQTL than expected by chance, GSEA, and transcription factor motif enrichment (HOMER)
+ ### RRBS meta data with all covariates, sample and animal names, and collection dates
