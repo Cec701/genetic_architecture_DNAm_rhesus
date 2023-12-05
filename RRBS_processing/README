@@ -1,0 +1,3 @@
+## Process RRBS reads (fastqs)
+# Trim adaptors with Trim Galore, map reads to macaque reference, and get methylation calls with Bismark
+1. trim_map.sh 
