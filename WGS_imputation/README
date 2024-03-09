@@ -1,3 +1,5 @@
+## Map reads to macaque reference genome with BWA-MEM: fq2bam.sh
+
 ### Genotype Imputation with 'loimpute'
 ### MGAP data for reference panel (Bimber et al., 2019)
 
