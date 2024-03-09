@@ -1,1 +1,42 @@
+### Genotype Imputation with 'loimpute'
+### MGAP data for reference panel (Bimber et al., 2019)
+
+## Info on filtering and phasing MGAP files is in /scratch/nsnyderm/mgap. Once MGAP reference files are filtered and phased, use as reference for imputation of Cayo WGS files. 
+
+## Work in: /scratch/mwatowic/gxe_project/gxe_modeling/cayo_vcfs_impute/
+
+# 1) Need the following files: 
+# chroms                is a list of all chromosomes
+# loimpute_latest.sif   is the loimpute environment
+# samples               is a list of samples/files that will be imputed.
+
+
+# 2) Need the following empty directories: 
+# pileups/
+# imputed/
+# merged_imputed/
+
+
+# 3) Mkdir mgap/ and copy the filtered and phased MGAP files per chromosome to it. 
+# cp /scratch/nsnyderm/mgap/mgap.chr*.phased.AFfilt.vcf.gz mgap/
+
+
+# 4) Perform pileup of WGS bams: pileup.sh
+# WGS bams: /data/CEM/smacklab/data/mapped_reads/cayo_WGS/*.mmul10.bam.bam
+# Use the new mgap filtered & phased files as the reference (/scratch/nsnyderm/mgap/mgap.chr*.phased.AFfilt.vcf.gz)
+
+
+# 5) Impute with loimpute: impute_single_chrom.sh
+# Imputed one chromosome at a time 
+# Set effective pop = 10,000
+# Reference files = phased MGAP files that were filtered for AF > 1% & <99% post-phasing. 
+# Make sure to also make tabix indexed files 
+
+# New imputed data will be: /scratch/mwatowic/gxe_project/gxe_modeling/cayo_vcfs_impute/
+
+# 6) Merge imputed results by chromosome with bcftools: merge_imputed.sh
+
+# 7) Filter imputed results for genotype probability > 0.9 , MAF > 0.05, and HWE threshold 10e-8: filterGP.sh filterHW_MAF.sh
+
+
 
