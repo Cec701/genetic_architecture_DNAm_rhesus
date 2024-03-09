@@ -3,8 +3,6 @@
 
 ## Info on filtering and phasing MGAP files is in /scratch/nsnyderm/mgap. Once MGAP reference files are filtered and phased, use as reference for imputation of Cayo WGS files. 
 
-## Work in: /scratch/mwatowic/gxe_project/gxe_modeling/cayo_vcfs_impute/
-
 # 1) Need the following files: 
 # chroms                is a list of all chromosomes
 # loimpute_latest.sif   is the loimpute environment
